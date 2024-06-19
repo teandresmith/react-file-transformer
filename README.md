@@ -69,7 +69,7 @@ yarn add react-file-transformer
 
 ## Usage
 
-Below is a basic example of using the react-file-transformer hook. For a more in-depth example, please see the demo.
+Below is a basic example of using the react-file-transformer hook. For a more in-depth example, please see the [demo](https://teandresmith.github.io/react-file-transformer/).
 
 ```tsx
 import { useFileTransformer } from "react-file-transformer";
@@ -105,4 +105,5 @@ export function Component() {
 
 To see a more in-depth example of how to use react-file-transformer, see the following:
 
-- Demo
+- [Demo](https://teandresmith.github.io/react-file-transformer/)
+- [Src](./src/App.tsx)
