@@ -1,0 +1,53 @@
+{
+  "name": "colmapper",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build:lib": "tsc --p ./tsconfig-build.json && vite build",
+    "build:demo": "tsc --p ./tsconfig.json && vite build --config vite.demo.config.ts",
+    "build": "yarn build:lib && yarn build:demo",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "papaparse": "^5.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz",
+    "react-dropzone": "^14.2.3"
+  },
+  "devDependencies": {
+    "@mantine/code-highlight": "^7.10.2",
+    "@mantine/core": "^7.10.2",
+    "@mantine/dropzone": "^7.10.2",
+    "@mantine/hooks": "^7.10.2",
+    "@tabler/icons-react": "^3.6.0",
+    "@types/papaparse": "^5.3.14",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "papaparse": "^5.4.1",
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.15.0",
+    "postcss-simple-vars": "^7.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
+  }
+}
