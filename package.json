@@ -1,7 +1,7 @@
 {
   "name": "react-file-transformer",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "dist"
@@ -9,6 +9,7 @@
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "homepage": "https://teandresmith.github.io/react-file-transformer",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build:lib": "tsc --p ./tsconfig-build.json && vite build",
@@ -17,7 +18,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d demo"
+    "deploy": "gh-pages -d demo",
+    "prepublishOnly": "yarn build"
   },
   "peerDependencies": {
     "papaparse": "^5.4.1",
