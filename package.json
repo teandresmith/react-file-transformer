@@ -1,7 +1,7 @@
 {
   "name": "react-file-transformer",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist"
@@ -22,9 +22,11 @@
     "prepublishOnly": "yarn build"
   },
   "peerDependencies": {
-    "papaparse": "^5.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "papaparse": "^5.4.1",
     "react-dropzone": "^14.2.3",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
   },
