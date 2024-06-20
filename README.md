@@ -106,4 +106,4 @@ export function Component() {
 To see a more in-depth example of how to use react-file-transformer, see the following:
 
 - [Demo](https://teandresmith.github.io/react-file-transformer/)
-- [Src](./src/App.tsx)
+- [src](./src/App.tsx)
